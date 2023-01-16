@@ -1,7 +1,11 @@
+/* Import scss */
+
 @import 'variables';
 @import 'mixins';
 @import 'globals';
 @import 'animations';
+
+/* Import components style */
 
 @import '../../components/Header/Header.scss';
 @import '../../components/Hero/Hero.scss';
@@ -9,8 +13,7 @@
 @import '../../components/Articles/Articles.scss';
 @import '../../components/Footer/Footer.scss';
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap');
+/* Import font */
 
-h1{
-    @include font($color, $fontSize);
-}
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
