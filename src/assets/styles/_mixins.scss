@@ -1,0 +1,8 @@
+$color: red;
+$fontSize: 30px;
+
+
+@mixin font($color, $fontSize){
+    color: $color;
+    font-size: $fontSize;
+}

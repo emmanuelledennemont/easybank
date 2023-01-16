@@ -1,0 +1,16 @@
+@import 'variables';
+@import 'mixins';
+@import 'globals';
+@import 'animations';
+
+@import '../../components/Header/Header.scss';
+@import '../../components/Hero/Hero.scss';
+@import '../../components/Offers/Offer.scss';
+@import '../../components/Articles/Articles.scss';
+@import '../../components/Footer/Footer.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap');
+
+h1{
+    @include font($color, $fontSize);
+}
