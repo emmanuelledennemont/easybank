@@ -1,5 +1,6 @@
-import logo from "../../assets/images/logo.svg";
+import logo from "../../assets/images/logo-w.svg";
 import facebook from "../../assets/images/icon-facebook.svg";
+import youtube from "../../assets/images/icon-youtube.svg";
 import twitter from "../../assets/images/icon-twitter.svg";
 import pinterest from "../../assets/images/icon-pinterest.svg";
 import instagram from "../../assets/images/icon-instagram.svg";
@@ -17,12 +18,17 @@ const Footer = () => {
               <li className="footer__social-item">
                 <a
                   href="https://www.facebook.com/"
-                  target="_blank"
-                  rel="noreferrer"
+                
                 >
                   <img src={facebook} alt="facebook icon" />
                 </a>
               </li>
+                <li className="footer__social-item">
+                <a
+                    href="https://www.youtube.com/">
+                    <img src={youtube} alt="youtube icon" />
+                    </a>
+                </li>
               <li className="footer__social-item">
                 <a
                   href="https://www.twitter.com/"
@@ -79,16 +85,7 @@ const Footer = () => {
           </div>
 
           <div className="footer__attribution">
-            Challenge by
-            <a
-              href="https://www.frontendmentor.io?ref=challenge"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Frontend Mentor
-            </a>
-            . Coded by Manue<a href="">.</a>@{new Date().getFullYear()}
-            @Easybank.All Rights Reserved
+            Coded by Manue <div>@{new Date().getFullYear()} Easybank. All Rights Reserved</div>           
           </div>
         </div>
       </footer>
