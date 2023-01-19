@@ -9,7 +9,7 @@ const Header = () => {
   const btnClass = `btn ${showMenu ? "hidden" : ""}`;
   const iconClass = `menu-icon ${!showMenu ? "open" : "close"}`;
 
-  const [lists, setLists] = useState([
+  const [lists] = useState([
     { id: 1, name: "Home" },
     { id: 2, name: "About" },
     { id: 3, name: "Contact" },
