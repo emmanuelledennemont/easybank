@@ -6,15 +6,15 @@ import confetti from "../../assets/images/image-confetti.jpg";
 const Articles = () => {
   return (
     <>
-      <section className="articles">
-        <div className="articles__container container ">
+   
+        <div className="articles container ">
           <h2>Latest Articles</h2>
           <div className="articles__content">
             <div className="articles__card">
               <div className="articles__card__img">
                 <img src={currency} alt="currency" />
               </div>
-              <div className="article__author"> By Claire Robinson</div>
+              <div className="articles__author"> By Claire Robinson</div>
               <div className="articles__card__content">
                 <h3>Receive money in any currency with no fees</h3>
                 <p>
@@ -28,7 +28,7 @@ const Articles = () => {
               <div className="articles__card__img">
                 <img src={restaurant} alt="restaurant" />
               </div>
-              <div className="article__author"> By Wilson Hutton</div>
+              <div className="articles__author"> By Wilson Hutton</div>
               <div className="articles__card__content">
                 <h3>Treat yourself without worrying about money</h3>
                 <p>
@@ -41,8 +41,9 @@ const Articles = () => {
               <div className="articles__card__img">
                 <img src={plane} alt="plane" />
               </div>
-              <div className="article__author"> By Wilson Hutton</div>
+              
               <div className="articles__card__content">
+              <div className="articles__author">By Wilson Hutton</div>
                 <h3>Take your Easybank card wherever you go</h3>
                 <p>
                   We want you to enjoy your travels. This is why we don’t charge
@@ -55,7 +56,7 @@ const Articles = () => {
               <div className="articles__card__img">
                 <img src={confetti} alt="confetti" />
               </div>
-              <div className="article__author"> By Claire Robinson</div>
+              <div className="articles__author"> By Claire Robinson</div>
               <div className="articles__card__content">
                 <h3>Our invite-only Beta accounts are now live!</h3>
                 <p>
@@ -67,7 +68,6 @@ const Articles = () => {
             </div>
           </div>
         </div>
-      </section>
     </>
   );
 };

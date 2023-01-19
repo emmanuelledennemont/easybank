@@ -29,13 +29,30 @@ nav {
   background-color: $white;
 }
 
-h1 {
-  font-size: 2.21rem;
+h1, h2, h3 {
   font-weight: $font-weight-light;
   color:$darkBlue;
-  margin: 0 0 1.563rem 0;
+  
   line-height: 1.15;
 }
+
+h1{
+  font-size: 2.21rem;
+  margin: 0 0 1.563rem 0;
+}
+
+h2{
+  font-size: 1.863rem;
+  margin: 0 0 1.563rem 0;
+}
+
+h3{
+  font-size: 1.15rem;
+  margin: 0 0 1.063rem 0;
+    
+  color: $darkBlue;
+}
+
 
 p{
   line-height: 1.5;
@@ -77,9 +94,4 @@ button, .btn{
   max-width: 69.375rem;
   margin: 0 auto;
   padding: 0 0.80rem;
-}
-
-.section {
-  padding: 5rem 0;
-  margin: 60px 0;
 }

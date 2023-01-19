@@ -1,0 +1,21 @@
+.offers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: $lightGrayishBlue;
+    padding: 70px 0;
+    margin: 90px auto; 
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        border: 5px green solid;
+    }
+}
+
