@@ -4,10 +4,28 @@ import youtube from "../../assets/images/icon-youtube.svg";
 import twitter from "../../assets/images/icon-twitter.svg";
 import pinterest from "../../assets/images/icon-pinterest.svg";
 import instagram from "../../assets/images/icon-instagram.svg";
+import { useState } from "react";
 
 const Footer = () => {
+
+    const [listsFooter] = useState([
+        { id: 1, name: "About Us" },
+        { id: 2, name: "Contact" },
+        { id: 3, name: "Blog" },
+        { id: 4, name: "Careers" },
+        { id: 5, name: "Support" },
+        { id: 6, name: "Privacy Policy" }
+      ]);
+      const [listIcons] = useState([ 
+        { id: 1, image: facebook, link: "https://www.facebook.com/" },
+        { id: 2, image: youtube, link: "https://www.youtube.com/" },
+        { id: 3, image: twitter, link: "https://www.twitter.com/" },
+        { id: 4, image: pinterest, link: "https://www.pinterest.com/" },
+        { id: 5, image: instagram, link: "https://www.instagram.com/" }
+        ]);
+
   return (
-    <div>
+    <>
       <footer className="footer">
         <div className="footer__container container">
           <div className="footer__logo">
@@ -15,71 +33,30 @@ const Footer = () => {
           </div>
           <div className="footer__social">
             <ul className="footer__social-list">
-              <li className="footer__social-item">
-                <a
-                  href="https://www.facebook.com/"
-                
+            
+            {listIcons.map((icon) => (
+                <li className="footer__social-item" key={icon.id}>
+                <a href={icon.link}
+                target="_blank"
+                rel="noreferrer"
                 >
-                  <img src={facebook} alt="facebook icon" />
+                <img src={icon.image
+                } alt="logo compagny name" />
                 </a>
-              </li>
-                <li className="footer__social-item">
-                <a
-                    href="https://www.youtube.com/">
-                    <img src={youtube} alt="youtube icon" />
-                    </a>
                 </li>
-              <li className="footer__social-item">
-                <a
-                  href="https://www.twitter.com/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img src={twitter} alt="twitter icon" />
-                </a>
-              </li>
-              <li className="footer__social-item">
-                <a
-                  href="https://www.pinterest.com/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img src={pinterest} alt="pinterest icon" />
-                </a>
-              </li>
-              <li className="footer__social-item">
-                <a
-                  href="https://www.instagram.com/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img src={instagram} alt="instagram icon" />
-                </a>
-              </li>
+            ))}
             </ul>
           </div>
           <div className="footer__links">
             <ul className="footer__links-list">
-              <li className="footer__links-item">
-                About Us
-              </li>
-              <li className="footer__links-item">
-                Contact
-              </li>
-              <li className="footer__links-item">
-                Blog
-              </li>
-              <li className="footer__links-item">
-                Careers
-              </li>
-              <li className="footer__links-item">
-                Support
-              </li>
-              <li className="footer__links-item">
-                Privacy Policy
-              </li>
+                {listsFooter.map((list) => (
+                    <li className="footer__links-item" key={list.id}>
+                    {list.name}
+                    </li>
+                ))}
             </ul>
           </div>
+
           <div className="footer__btn">
             <button className="btn">Request Invite</button>
           </div>
@@ -89,7 +66,7 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-    </div>
+    </>
   );
 };
 
