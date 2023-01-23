@@ -1,13 +1,10 @@
 .articles {
   width: 100%;
-  background-color: $weryLightGray;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 40px;
-  border: 5px green solid;
-  background-color: $weryLightGray;
+  margin-bottom: 88px;
 
   &__content {
     display: grid;
@@ -51,6 +48,15 @@
     margin-bottom: 1.25rem;
   }
 
-  &__card__content__title {
+  &__card__content {
+    h3{
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
+    }
+    &:hover {
+      h3 {
+        color: $limeGreen;
+      }
+    }
   }
 }
