@@ -32,8 +32,7 @@ const Footer = () => {
             <img src={logo} alt="logo compagny name" />
           </div>
           <div className="footer__social">
-            <ul className="footer__social-list">
-            
+            <ul className="footer__social-list"> 
             {listIcons.map((icon) => (
                 <li className="footer__social-item" key={icon.id}>
                 <a href={icon.link}

@@ -24,6 +24,7 @@
     }
   }
 }
+
 .hidden {
   display: none;
 }
@@ -45,7 +46,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: calc(100% - 3rem);    
+    width: calc(100% - 3rem);  
+    max-width: 330px;  
     position: absolute;
     top: 1%;
     left: 50%;
@@ -55,7 +57,31 @@
     padding: 1.625rem;
     border-radius: 0.5rem;
     z-index: 2;
+
+    .navBar__list {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1.5rem;
+      width: 100%;
+      height: 100%;
+      padding: 1.5rem 0;
+      li {
+        width: 100%;
+        text-align: center;
+        font-size: $font-size-med;
+        color:$darkBlue;
+          text-decoration: none;
+          transition: all 0.3s ease-in-out;
+          cursor: pointer;
+          &:hover {
+            color: $limeGreen;
+          }
+      }
+    }
   }
+
   &-background {
     position: absolute;
     top: 0;

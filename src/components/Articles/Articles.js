@@ -6,7 +6,6 @@ import confetti from "../../assets/images/image-confetti.jpg";
 const Articles = () => {
   return (
     <>
-   
         <div className="articles container ">
           <h2>Latest Articles</h2>
           <div className="articles__content">
